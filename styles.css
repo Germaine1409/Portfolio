@@ -1,0 +1,148 @@
+
+:root {
+	--blue-dark: #12355b;
+	--blue: #1d4ed8;
+	--blue-light: #eff6ff;
+	--orange: #ea580c;
+	--orange-light: #fff7ed;
+	--text: #f8fafc;
+}
+
+html {
+	min-height: 100%;
+	background:
+		radial-gradient(circle at 12% 18%, rgba(147, 197, 253, 0.3) 0 2px, transparent 3px),
+		radial-gradient(circle at 88% 76%, rgba(253, 186, 116, 0.3) 0 2px, transparent 3px),
+		repeating-linear-gradient(90deg, transparent 0 79px, rgba(191, 219, 254, 0.12) 80px 81px),
+		repeating-linear-gradient(0deg, transparent 0 79px, rgba(254, 215, 170, 0.1) 80px 81px),
+		linear-gradient(135deg, #1e3a8a 0%, #9a3412 100%);
+}
+
+body {
+	max-width: 1100px;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 32px 20px;
+	color: var(--text);
+	background: transparent;
+	font-family: Georgia, "Times New Roman", serif;
+	line-height: 1.6;
+}
+
+.portfolio-layout {
+	display: grid;
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+.section-row {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 190px;
+	gap: 28px;
+	align-items: stretch;
+	margin-bottom: 24px;
+}
+
+.section-row.full-width {
+	grid-template-columns: 1fr;
+}
+
+.section-row section {
+	margin-bottom: 0;
+}
+
+.section-row .image-placeholder {
+	min-height: 100%;
+	aspect-ratio: auto;
+}
+
+.image-placeholder {
+	display: grid;
+	place-items: center;
+	padding: 16px;
+	color: #dbeafe;
+	background-color: rgba(15, 23, 42, 0.32);
+	border: 2px dashed #fdba74;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-size: 0.85rem;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+.image-placeholder span {
+	padding: 6px 8px;
+	background-color: rgba(15, 23, 42, 0.55);
+}
+
+.profile-image {
+	width: 100%;
+	max-width: 190px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+section {
+	margin-bottom: 24px;
+	padding: 24px;
+	background-color: rgba(15, 23, 42, 0.28);
+	border-left: 5px solid var(--orange);
+	box-shadow: 0 4px 12px rgba(15, 23, 42, 0.2);
+}
+
+h1 {
+	margin-top: 0;
+	color: #ffffff;
+	font-family: Arial, sans-serif;
+}
+
+a {
+	display: inline-block;
+	min-width: 92px;
+	padding: 8px 12px;
+	color: #ffffff;
+	background-color: var(--blue);
+	border: 1px solid var(--blue);
+	border-radius: 0;
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-weight: 600;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+a:hover,
+a:focus-visible {
+	background-color: var(--orange);
+	border-color: var(--orange);
+	outline: 2px solid var(--orange);
+	outline-offset: 2px;
+}
+
+@media (max-width: 720px) {
+	body {
+		padding: 24px 16px;
+	}
+
+	.portfolio-layout {
+		display: block;
+	}
+
+	.section-row {
+		display: block;
+	}
+
+	.section-row .image-placeholder {
+		min-height: 150px;
+		margin-top: 18px;
+	}
+
+	.languages-section {
+		margin-bottom: 0;
+	}
+
+	section {
+		padding: 20px;
+	}
+}
