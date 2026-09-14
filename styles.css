@@ -191,6 +191,29 @@ body {
   text-decoration: none;
 }
 
+.primary-button {
+  color: #ffffff;
+  background: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+.secondary-button {
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.primary-button:hover,
+.primary-button:focus-visible,
+.secondary-button:hover,
+.secondary-button:focus-visible {
+  color: #ffffff;
+  background: var(--blue);
+  border-color: var(--blue);
+  outline: 2px solid var(--orange-light);
+  outline-offset: 2px;
+}
+
 @media (max-width: 900px) {
   .hero {
     gap: 24px;
