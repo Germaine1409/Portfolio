@@ -47,6 +47,7 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
+  overflow-x: hidden;
   color: var(--text);
   background: transparent;
   font-family: Georgia, "Times New Roman", serif;
@@ -69,6 +70,7 @@ body {
   max-width: 1020px;
   margin: 0 auto;
   padding: 0 20px;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -153,6 +155,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  min-width: 0;
 }
 
 .image-frame {
@@ -169,6 +172,35 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  display: inline-block;
+  max-width: 100%;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    gap: 24px;
+    padding: 32px;
+  }
+
+  .section,
+  .site-footer {
+    padding: 28px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -511,6 +543,23 @@ body {
 }
 
 @media (max-width: 600px) {
+  body {
+    padding: 0 12px;
+  }
+
+  .navbar {
+    padding: 0 8px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+  }
+
+  .site-header {
+    margin-bottom: 20px;
+  }
+
   .hero,
   .section,
   .site-footer {
@@ -525,10 +574,6 @@ body {
 
   .project-card {
     grid-template-columns: 1fr;
-  }
-
-  .project-image {
-    min-height: 180px;
   }
 
   .project-image {
