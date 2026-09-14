@@ -1,54 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Germaine's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <meta
+      name="description"
+      content="Germaine Reed's software development portfolio. Explore my projects, technical skills, and experience at Base Camp Coding Academy."
+    />
 
-<body>
-        <div class="portfolio-layout">
-            <main>
-              <div class="section-row full-width">
-      <section>
-        <h1>Contacts</h1>
-        <p>Email: germaine0114@outlook.com</p>
-        <p>Phone: (662)-607-4257</p>
-        <p><a href="https://www.linkedin.com/in/germaine-reed-123456789/" target="_blank">LinkedIn</a></p>
-        <p><a href="https://github.com/Germaine1409" target="_blank">GitHub</a></p>
-    </section>
-                            </div>
+    <title>Germaine Reed | Software Developer</title>
 
-                            <div class="section-row">
-    <section>
-        <h1>Germaine Reed</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-        <p>Hello, my name is Germaine and I am a student currently studying
-            software development at Base Camp Coding Academy. I'm learning how
-            to code because I want to be able to tell stories through the things
-            I create myself and for others. I love video games and spending time
-            with my family and my friends, and I also enjoy listening to music
-            from those games too. I hope that the things that I create can help
-            people in their lives whether it be to give them a break or help make
-            something easier for them. </p>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="#home" class="logo">GR<span>.</span></a>
 
-    </section>
-                                <img src="GradPhoto.jpg" alt="Profile image" class="profile-image">
-                            </div>
-  
-        <section class="languages-section">
-        <h1>Languages we study</h1>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-        </ul>
-    </section>
-            </main>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-</body>
 
+        <a href="Germaine Reed Resume.pdf" class="nav-resume" target="_blank">Resume</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">SOFTWARE DEVELOPER</p>
+
+          <h1>Hi, I'm <span>Germaine Reed.</span></h1>
+
+          <p class="hero-description">
+            I'm a software development student at Base Camp Coding Academy who
+            enjoys turning ideas into useful and creative software.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="button primary-button"
+              >View My Projects</a
+            >
+            <a href="#contact" class="button secondary-button">Get In Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="image-frame">
+            <img src="GradPhoto.jpg" alt="Germaine Reed" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">ABOUT ME</p>
+          <h2>A little about me.</h2>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm Germaine Reed, a software development student at Base Camp
+              Coding Academy. I'm from Water Valley, Mississippi and enjoy
+              building software that combines technology with creativity and
+              storytelling.
+            </p>
+
+            <p>
+              At Base Camp, I've been developing my skills in programming, web
+              development, databases, and software engineering. I enjoy creating
+              applications that are useful, engaging, and enjoyable to use.
+            </p>
+
+            <p>
+              I'm looking forward to continuing to grow as a developer and
+              contributing to a team where I can learn, build meaningful
+              software, and turn ideas into real products.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-item">
+              <span>Location</span>
+              <strong>Mississippi</strong>
+            </div>
+
+            <div class="about-card-item">
+              <span>Education</span>
+              <strong>Base Camp Coding Academy</strong>
+            </div>
+
+            <div class="about-card-item">
+              <span>Interests</span>
+              <strong>Software · Games · Technology</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">TECHNICAL SKILLS</p>
+          <h2>Tools I work with.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Languages</h3>
+
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Java</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Frameworks</h3>
+
+            <ul>
+              <li>React</li>
+              <li>Django</li>
+              <li>Spring</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Development Tools</h3>
+
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>AI Tools</h3>
+
+            <ul>
+              <li>ChatGPT</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Certifications</h3>
+
+            <ul>
+              <li>Intuit Entrepreneurship and Small Business</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">MY WORK</p>
+          <h2>Projects I've built.</h2>
+
+          <p class="section-intro">
+            A selection of projects that demonstrate what I've learned and what
+            I enjoy building.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                class="project-placeholder"
+                src="Memento.png"
+                alt="Memento Cafe game artwork"
+              />
+            </div>
+
+            <div class="project-content">
+              <p class="project-type">Game</p>
+
+              <h3>Memento Cafe</h3>
+
+              <p>
+                In this game, you play as a man who suddenly dies at his local
+                coffee shop, only to wake up and find himself back at the moment
+                he first entered. Trapped in a mysterious time loop, you must
+                use the items, clues, and people around you to prevent your
+                death and find a way to break the loop.
+              </p>
+
+              <div class="technology-list">
+                <span>Python</span>
+              </div>
+
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-container">
+          <div class="section-heading">
+            <p class="eyebrow">CONTACT</p>
+            <h2>Let's connect.</h2>
+
+            <p class="section-intro">
+              Whether you're interested in my work, have an opportunity to
+              share, or just want to connect, feel free to reach out.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <a href="mailto:germaine0114@outlook.com" class="contact-card">
+              <span class="contact-label">EMAIL</span>
+              <strong>germaine0114@outlook.com</strong>
+              <span class="contact-arrow">↗</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/germaine-reed-software-dev/"
+              class="contact-card"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact-label">LINKEDIN</span>
+              <strong>Connect with me</strong>
+              <span class="contact-arrow">↗</span>
+            </a>
+
+            <a
+              href="https://github.com/Germaine1409"
+              class="contact-card"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact-label">GITHUB</span>
+              <strong>View my code</strong>
+              <span class="contact-arrow">↗</span>
+            </a>
+
+            <a href="Germaine Reed Resume.pdf" class="contact-card" target="_blank">
+              <span class="contact-label">RESUME</span>
+              <strong>View my resume</strong>
+              <span class="contact-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div>
+          <a href="#home" class="footer-logo">GR<span>.</span></a>
+
+          <p>Software developer building with creativity and purpose.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-buttons">
+          <a
+            href="https://github.com/Germaine1409"
+            class="footer-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/germaine-reed-software-dev/"
+            class="footer-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
